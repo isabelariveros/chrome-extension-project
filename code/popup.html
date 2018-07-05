@@ -3,13 +3,22 @@
   <head>
     <style>
       button {
-        height: 30px;
-        width: 30px;
+        height: 60px;
+        width: 600px;
         outline: none;
       }
     </style>
   </head>
   <body>
     <button id="changeColor"></button>
+    <script src="popup.js"></script>
+      <div class="search">
+    <!-- <button onclick="myFunction()" class="dropbtn">Profile search</button> -->
+    <div id="mysearch" class="search-content">
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"> 
+      <button>Submmit</button>   
+    </div>
   </body>
-</html>
+
+
+   </html>
