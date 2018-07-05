@@ -1,7 +1,7 @@
 {
-    "name": "Getting Started Example",
+    "name": "Lightning",
     "version": "1.0",
-    "description": "Build an Extension!",
+    "description": "Quick summoner search",
     "permissions": ["declarativeContent", "storage"],
     "background": {
       "scripts": ["background.js"],
