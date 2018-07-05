@@ -1,7 +1,6 @@
 {
     "name": "Lightning",
     "version": "1.0",
-    "default_locale": "en",
     "description": "Quick summoner search",
     "permissions": ["declarativeContent", "storage"],
     "background": {
