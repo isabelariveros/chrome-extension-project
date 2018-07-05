@@ -5,6 +5,13 @@
 }
 
 #mysearch {
-    height:25px ;
-    width: 255px; 
+    height:250px ;
+    width: 2550px; 
+}
+
+div.background {
+    background-image: url('http://jllsly.com/wallpapers/xleague-of-legends-championship-thresh-wallpaper-hd-Is-Cool-Wallpapers.jpg.pagespeed.ic.bGHURPnUvZ.jpg');
+    background-size: cover;
+    background-color: #000000;
+    border: 2px solid black;
 }
