@@ -1,4 +1,10 @@
+#submit-button {
+    height:20px ;
+    width: 60px;
+   display: inline; 
+}
 
-#button {
-    background-color: yellow;
+#mysearch {
+    height:25px ;
+    width: 255px; 
 }
