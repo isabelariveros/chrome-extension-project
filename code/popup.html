@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-
     <style>
       button {
         height: 70px;
-        width: 600px;
+        width: 60px;
         outline: none;
       }
     </style>
   <link rel="stylesheet" type="text/css" href="search.css"> 
   </head>
-  <body>   
+
+  <body>
+    <!-- <button id="changeColor"></button> -->
+
     <script src="popup.js"></script>
-      <form>
-        <div>
-          <label for="sumName" id="sumName">Choose a username: </label>
-          <input type="text" id="sumName" name="name">
-          <button id="submit-button" onclick="storeSumName();">Submit</button>  
-        </div>
-      </form>
+
+      <div class="search background">
+
+     <div id="mysearch" class="search-content">
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"> 
+      <button id="submit-button">Submit 1</button>   
+    </div> -->  
+
+
   </body>
+   </html>
 
+       
 
-   </html>               
