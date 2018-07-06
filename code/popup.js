@@ -1,15 +1,11 @@
-function getUserName() {
-    var nameField = document.getElementById('nameField').value;
-    var result = document.getElementById('result');
-    
-    if (nameField.length < 3) {
-        result.textContent = 'Username must contain at least 3 characters';
-        //alert('Username must contain at least 3 characters');
-    } else {
-        result.textContent = 'Your username is: ' + nameField;
-        //alert(nameField);
-    }
+function getSummId(summName){
+  console.log("Here is the summoner name used: ", summName);
+fetch("http://localhost:3000/lolapi", {
+  body: JSON.stringify({summName}),
+  method: "POST",
+  headers: {"Content-Type": "application/json"}
+}).then(response => {
+      // return response.json().id;
+      console.log(response);
+  })
 }
-// use an eventlistener for the event
-var subButton = document.getElementById('subButton');
-subButton.addEventListener('click', getUserName, false);
