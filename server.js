@@ -1,18 +1,21 @@
 /* eslint no-console: "off" */
 const express = require('express');
 const fetch = require('request');
+const bodyParser = require('body-parser');
 
 const app = express();
 const router = express.Router();
+let summName = "monomania";
+let apiUrl = "https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + summName + "?api_key=RGAPI-c3e11b91-57ec-41e8-b9a7-5f043a294483"
 
 router.get("/lolapi", function(req,res){
-    var summName = "monomania";
-    fetch("https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + summName + "?api_key=RGAPI-861be359-25cf-4cac-a289-732558d50429", function(error, response, body){
-        console.log(body);
-        return res.json(body);
+    fetch(apiUrl, function(error, response, body){
+        console.log("body", body);
+        //console.log("response", response)
+        return res.status("200").json(body)
     })
 })
-
+app.use(bodyParser.json());
 app.use(express.static('code'));
 app.use("/", router);
 
