@@ -11,17 +11,16 @@
     </style>
   <link rel="stylesheet" type="text/css" href="search.css"> 
   </head>
-  <body>
-   <!-- <button id="changeColor"></button> -->
+  <body>   
     <script src="popup.js"></script>
-      <div class="search">
-    <!-- <button onclick="myFunction()" class="dropbtn">Profile search</button> -->
-    <div id="mysearch" class="search-content">
-      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"> 
-      <button id="submit-button">Submit</button>   
-    </div>
-    <script src="apidata.js"></script>
+      <form>
+        <div>
+          <label for="sumName" id="sumName">Choose a username: </label>
+          <input type="text" id="sumName" name="name">
+          <button id="submit-button" onclick="storeSumName();">Submit</button>  
+        </div>
+      </form>
   </body>
 
 
-   </html>
+   </html>               
