@@ -1,12 +1,3 @@
-// function storeSumName() {
-//     document.getElementById('sumName').submit();
-//     }
-// console.log(sumName);
-// console.log(storeSumName);
-// function sumName() {
-//     var input = document.getElementById("userInput").value;
-    
-// }
 function getUserName() {
     var nameField = document.getElementById('nameField').value;
     var result = document.getElementById('result');
@@ -18,4 +9,7 @@ function getUserName() {
         result.textContent = 'Your username is: ' + nameField;
         //alert(nameField);
     }
-    }
+}
+// use an eventlistener for the event
+var subButton = document.getElementById('subButton');
+subButton.addEventListener('click', getUserName, false);
