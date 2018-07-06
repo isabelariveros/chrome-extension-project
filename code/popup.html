@@ -18,10 +18,14 @@
 
       <div class="search background">
 
-     <div id="mysearch" class="search-content">
-      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"> 
-      <button id="submit-button">Submit 1</button>
-    </div>
+        <form>
+          <div>
+            <label for="sumName">Choose a username: </label>
+            <input type="text" id="sumName" name="name">
+            <button id="submit-button" onclick="storeSumName();">Submit</button>  
+          </div>
+        </form>
+        
     <script src="apidata.js"></script>
   </body>
    </html>
