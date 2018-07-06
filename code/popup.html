@@ -1,54 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      button {
-        height: 70px;
-        width: 60px;
-        outline: none;
-      }
-    </style>
-  <link rel="stylesheet" type="text/css" href="search.css"> 
-  </head>
 
-  <body>
-    <!-- <button id="changeColor"></button> -->
+<head>
+  <style>
+    button {
+      height: 70px;
+      width: 60px;
+      outline: none;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="search.css">
+</head>
 
-    <script src="popup.js"></script>
+<body>
 
-      <div class="search background">
+  <div class='wrapper'>
+    <form id='nameForm'>
+      <div class='form-uname'>
+        <lable id='nameLable' for='nameField'>Create a username:</lable>
+        <input id='nameField' type='text' maxlength='25'></input>
+      </div>
+      <div class='form-sub'>
+        <button id='subButton' type='button'>Print your name!</button>
+      </div>
+    </form>
 
-        <!-- <form>
-          <div>
-            <label for="sumName">Choose a username: </label>
-            <input type="text" id="sumName" name="name">
-            <button id="submit-button" onclick="storeSumName();">Submit</button>  
-          </div>
-        </form> -->
+    <div>
+      <p id='result'></p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+  <script src="apidata.js"></script>
+</body>
 
-        <!-- <form id="form" onsubmit="return false;">
-          <input  type="text" id="userInput" />
-          <input  type="submit" onclick="sumName();" />
-      </form> -->
-
-      <div class='wrapper'>
-        <form id='nameForm'>
-        <div class='form-uname'>
-            <lable id='nameLable' for='nameField'>Create a username:</lable>
-            <input id='nameField' type='text' maxlength='25'></input>
-        </div>
-        <div class='form-sub'>
-            <button id='subButton' type='button'>Print your name!</button>
-        </div>
-        </form>
-        
-        <div>
-            <p id='result'></p></div>
-        </div>
-
-    <script src="apidata.js"></script>
-  </body>
-   </html>
-
-       
-
+</html>
